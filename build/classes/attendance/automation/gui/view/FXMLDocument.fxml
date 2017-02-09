@@ -6,9 +6,27 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendance.automation.gui.controller.FXMLDocumentController">
-    <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
-    </children>
-</AnchorPane>
+
+<BorderPane fx:id="bPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendance.automation.gui.view.FXMLDocumentController">
+   <center>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <TitledPane fx:id="tPane" animated="false" text="untitled" HBox.hgrow="SOMETIMES">
+              <content>
+                <AnchorPane minHeight="200.0" minWidth="0.0" prefWidth="341.0" />
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" text="untitled" HBox.hgrow="SOMETIMES">
+               <content>
+                  <AnchorPane minHeight="200.0" minWidth="0.0" prefWidth="341.0" />
+               </content>
+            </TitledPane>
+            <TitledPane animated="false" text="untitled" HBox.hgrow="SOMETIMES">
+               <content>
+                  <AnchorPane minHeight="200.0" minWidth="0.0" prefWidth="341.0" />
+               </content>
+            </TitledPane>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
