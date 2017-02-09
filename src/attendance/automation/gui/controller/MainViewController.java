@@ -7,7 +7,11 @@ package attendance.automation.gui.controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TitledPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 
 /**
  * FXML Controller class
@@ -17,13 +21,20 @@ import javafx.fxml.Initializable;
 public class MainViewController implements Initializable
 {
 
+    @FXML
+    private TitledPane titledPaneCenter;
+    @FXML
+    private HBox hBox;
+    @FXML
+    private VBox vBoxMonday;
+
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
-        // TODO
+       
     }    
     
 }
